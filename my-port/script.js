@@ -1,9 +1,11 @@
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
 
+trilho.addEventListenes('click', ()=>{
+    trilho.classList.toggle('dark')
+    body.classList.toggle('dark')
 
-
-
-
-
+})
 
 
 
@@ -28,11 +30,3 @@ window.addEventListener('load', () => {
 });
 
 
-let trilho = document.getElementById('trilho')
-let body = document.querySelector('body')
-
-trilho.addEventListenes('click', ()=>{
-    trilho.classList.toggle('dark')
-    body.classList.toggle('dark')
-
-})
